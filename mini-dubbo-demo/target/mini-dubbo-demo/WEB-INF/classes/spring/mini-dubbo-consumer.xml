@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:miniDubbo="http://www.xcxyz-mini-dubbo.com/schema/mini-dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.xcxyz-mini-dubbo.com/schema/mini-dubbo http://www.xcxyz-mini-dubbo.com/schema/mini-dubbo.xsd">
+
+
+    <!-- 引入远程服务 -->
+    <miniDubbo:reference id="remoteHelloService"
+                          interface="com.xcxyz.mini.dubbo.demo.HelloService"
+                          clusterStrategy="WeightRandom"
+                          remoteAppKey="ares"
+                          groupName="default"
+                          timeout="3000"/>
+
+
+</beans>

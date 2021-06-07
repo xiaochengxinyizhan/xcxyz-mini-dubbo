@@ -1,0 +1,16 @@
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/XmlSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/HessianSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/AvroSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/FDateJsonSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/ThriftSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/DefaultJavaSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/FDateJsonDeserializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/ISerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/SerializeType.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/ProtoStuffSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/MarshallingSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/ProtocolBufferSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/engine/SerializerEngine.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/handler/NettyEncoderHandler.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/impl/JSONSerializer.java
+/Users/didi/Documents/github.com/xcxyz-mini-dubbo/mini-dubbo-serialization/src/main/java/com/xcxyz/mini/dubbo/common/serialization/handler/NettyDecoderHandler.java
