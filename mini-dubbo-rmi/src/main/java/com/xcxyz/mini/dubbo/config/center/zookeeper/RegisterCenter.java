@@ -44,10 +44,18 @@ public class RegisterCenter  implements IRegisterCenter4Invoker, IRegisterCenter
     private RegisterCenter() {
     }
 
+    /**
+     * 单例模式返回注册中心实例
+     * @return
+     */
     public static RegisterCenter singleton() {
         return registerCenter;
     }
 
+    /**
+     * 注册服务元数据
+     * @param serviceMetaData
+     */
     @Override
     public void registerProvider(final List<ProviderService> serviceMetaData) {
         if (CollectionUtils.isEmpty(serviceMetaData)) {
@@ -143,6 +151,10 @@ public class RegisterCenter  implements IRegisterCenter4Invoker, IRegisterCenter
         return serviceMetaDataMap4Consume;
     }
 
+    /**
+     * 注册消费实例
+     * @param invoker
+     */
     @Override
     public void registerInvoker(InvokerService invoker) {
         if (invoker == null) {
@@ -184,7 +196,9 @@ public class RegisterCenter  implements IRegisterCenter4Invoker, IRegisterCenter
     }
 
 
-    //利用ZK自动刷新当前存活的服务提供者列表数据
+    /**
+     * 第一次主动拉取后，利用ZK自动刷新当前存活的服务提供者列表数据
+     */
     private void refreshActivityService(List<String> serviceIpList) {
         if (serviceIpList == null) {
             serviceIpList = Lists.newArrayList();
@@ -212,7 +226,9 @@ public class RegisterCenter  implements IRegisterCenter4Invoker, IRegisterCenter
         providerServiceMap.putAll(currentServiceMetaDataMap);
     }
 
-
+    /**
+     * 第一次主动拉取后，利用ZK自动刷新当前存活的服务提供者列表元数据
+     */
     private void refreshServiceMetaDataMap(List<String> serviceIpList) {
         if (serviceIpList == null) {
             serviceIpList = Lists.newArrayList();
@@ -240,7 +256,12 @@ public class RegisterCenter  implements IRegisterCenter4Invoker, IRegisterCenter
         serviceMetaDataMap4Consume.putAll(currentServiceMetaDataMap);
     }
 
-
+    /**
+     * 拉取或者更新元数据
+     * @param remoteAppKey
+     * @param groupName
+     * @return
+     */
     private Map<String, List<ProviderService>> fetchOrUpdateServiceMetaData(String remoteAppKey, String groupName) {
         final Map<String, List<ProviderService>> providerServiceMap = Maps.newConcurrentMap();
         //连接zk
@@ -306,6 +327,12 @@ public class RegisterCenter  implements IRegisterCenter4Invoker, IRegisterCenter
         return providerServiceMap;
     }
 
+    /**
+     * 查询服务提供和消费者
+     * @param serviceName
+     * @param appKey
+     * @return
+     */
     @Override
     public Pair<List<ProviderService>, List<InvokerService>> queryProvidersAndInvokers(String serviceName, String appKey) {
         //服务消费者列表
